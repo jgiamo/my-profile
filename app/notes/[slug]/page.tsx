@@ -84,12 +84,12 @@ export default function NotePage({ params }: Props) {
                 remarkPlugins: [remarkGfm],
                 rehypePlugins: [
                   [
-                    rehypePrettyCode as any,
+                    rehypePrettyCode,
                     {
                       theme: { dark: "github-dark", light: "github-light" },
                       keepBackground: false,
                     },
-                  ],
+                  ] as any,
                 ],
               },
             }}
